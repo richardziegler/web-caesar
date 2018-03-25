@@ -7,7 +7,6 @@ app.config['DEBUG'] = True
 
 form = """
 <!DOCTYPE html>
-
 <html>
     <head>
         <style>
@@ -31,11 +30,8 @@ form = """
             <label for="rot"><b>Rotate by:</b></label>
             <input id="rot" type="text" name="rot" />
 
-
             <textarea name="text"></textarea>
-
-
-
+            
             <input type="submit" value="Submit Querey" /> 
         </form>
     </body>
@@ -46,7 +42,7 @@ form = """
 def encrypt():
     rot = request.form['rot']
     text = request.form['text']
-    return "<h1>rot: " + rot + " text: " + text + "</h1>"
+    return form
 
 
 
